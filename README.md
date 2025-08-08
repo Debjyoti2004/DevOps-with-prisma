@@ -2,15 +2,16 @@
 
 ### Run PostgreSQL on Docker
 ```bash
-docker run  -d \
+docker run -d \                                                                                                                                     ─╯
   --name postgres-db \
-  --network my-network \                                                                                                                  ─╯
+  --network my-network \
   -e POSTGRES_USER=admin \
   -e POSTGRES_PASSWORD=secret \
   -e POSTGRES_DB=postgres \
   -p 5432:5432 \
   -v postgres_data:/var/lib/postgresql/data \
   postgres:15
+
 ```
 ### PostgreSQL URL
 
