@@ -2,9 +2,8 @@
 
 ### Run PostgreSQL on Docker
 ```bash
-docker run  -d \
+docker run -d \                                                                                                                                     ─╯
   --name postgres-db \
-  --network my-network \                                                                                                                  ─╯
   -e POSTGRES_USER=admin \
   -e POSTGRES_PASSWORD=secret \
   -e POSTGRES_DB=postgres \
